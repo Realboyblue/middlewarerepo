@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Landing Page</title>
+  <meta name="description" content="A simple blank landing page starter." />
+
+  <!-- Social preview (optional) -->
+  <meta property="og:title" content="Landing Page" />
+  <meta property="og:description" content="A simple blank landing page starter." />
+  <meta property="og:type" content="website" />
+
+  <style>
+    :root {
+      color-scheme: light dark;
+      --max: 1100px;
+      --pad: 24px;
+      --radius: 14px;
+      --border: color-mix(in oklab, CanvasText 18%, transparent);
+    }
+
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.45;
+      background: Canvas;
+      color: CanvasText;
+    }
+
+    .wrap {
+      min-height: 100%;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+    }
+
+    header, main, footer {
+      padding: var(--pad);
+    }
+
+    .container {
+      max-width: var(--max);
+      margin: 0 auto;
+    }
+
+    header .bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: inherit;
+      font-weight: 650;
+      letter-spacing: 0.2px;
+    }
+
+    .logo {
+      width: 34px;
+      height: 34px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      display: grid;
+      place-items: center;
+      opacity: 0.9;
+      user-select: none;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: inherit;
+      opacity: 0.85;
+      padding: 8px 10px;
+      border-radius: 10px;
+    }
+    nav a:hover { background: color-mix(in oklab, CanvasText 10%, transparent); }
+
+    main .panel {
+      border: 1px dashed var(--border);
+      border-radius: var(--radius);
+      padding: clamp(18px, 3vw, 32px);
+      min-height: 55vh;
+      display: grid;
+      place-items: center;
+      text-align: center;
+    }
+
+    .hint {
+      max-width: 60ch;
+      opacity: 0.75;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      opacity: 0.75;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="container bar">
+        <a class="brand" href="#">
+          <span class="logo" aria-hidden="true">◻︎</span>
+          <span>Your Brand</span>
+        </a>
+
+        <nav aria-label="Primary">
+          <a href="#"></a>
+          <a href="#"></a>
+          <a href="#"></a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <section cla
